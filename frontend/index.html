@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crush Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <h1 class="title">Crush<br>Calculator</h1>
+    <p class="intro">Type your name and your crush's name. We'll tell you how well you match.</p>
+ 
+    <form id="calc-form" class="card" novalidate>
+      <div class="field">
+        <label for="your-name">Your name</label>
+        <input id="your-name" name="your_name" type="text" maxlength="50" autocomplete="off" placeholder="Enter your name">
+      </div>
+ 
+      <div class="field">
+        <label for="crush-name">Your crush's name</label>
+        <input id="crush-name" name="crush_name" type="text" maxlength="50" autocomplete="off" placeholder="Enter your crush's name">
+      </div>
+ 
+      <p id="error" class="error" role="alert" hidden></p>
+ 
+      <button id="calc-btn" type="submit" class="btn">Calculate</button>
+    </form>
+ 
+    <section id="result" class="result" aria-live="polite" hidden>
+      <div class="heart">
+        <span id="score" class="score">0%</span>
+      </div>
+      <p id="result-names" class="result-names"></p>
+      <p id="result-msg" class="result-msg"></p>
+    </section>
+ 
+    <!-- <section class="history">
+      <h2>Recent matches</h2>
+      <ul id="history-list" class="history-list">
+        <li class="empty">No matches yet. Calculate one above.</li>
+      </ul>
+    </section>
+  </main> -->
+ 
+  <script src="script.js"></script>
+</body>
+</html>
+ 
+
